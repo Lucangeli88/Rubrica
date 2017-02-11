@@ -31,5 +31,31 @@ public class Test {
         System.out.println(b.isEmpty());
         b.remove("ascoli");
     }
-    
 }
+ /**
+Scanner in=new Scanner(System.in);
+      System.out.println("Inserisci il nome da aggiungere alla rubrica:");
+      String c=in.next();
+      System.out.println("Inserisci il numero di telefono:");
+      String d=in.next();
+      Voce a=new Voce(c,d); 
+      Rubric b=new Rubric(a);
+      System.out.println("Inserisci il nome da aggiungiere alla rubrica:");
+      String e=in.next();
+      System.out.println("Inserisci il numero di telefono:");
+      String f=in.next();
+      b.insert(e, f);
+      System.out.println("Inserisci il nome da aggiungere alla rubrica:");
+      String g=in.next();
+      System.out.println("Inserisci il numero di telefono:");
+      String h=in.next();
+      b.insert(g,h);
+      System.out.println(b.toString());
+      System.out.println("Inserisci il nome da cercare:");
+      String i=in.next();
+      System.out.println(b.find(i));
+      System.out.println("Inserisci il nome da eliminare dalla rubrica:");
+      String l=in.next();
+      b.remove(l);
+      System.out.println(b.toString());
+*/
