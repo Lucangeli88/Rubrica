@@ -27,7 +27,7 @@ public class Rubric implements Dictionary {
     }
  
     public void insert(Comparable key, Object value){
-            if(key==null)throw new IllegalArgumentException("inserisci un nome");
+            if(key==null)throw new IllegalArgumentException("Inserisci un nome");
             for(int i=0;i<=a.size()-1;i++){
                 if(a.get(i).getNome().equals(key)){
                     a.get(i).setValore((String)value);
@@ -46,7 +46,7 @@ public class Rubric implements Dictionary {
                     state=true;
                 }//if
             }//for
-            if (!state)throw new DictionaryItemNotFoundException("nome non trovato"); 
+            if (!state)throw new DictionaryItemNotFoundException("Nome non trovato"); 
     }
     
     public String find(Comparable key){
@@ -58,8 +58,8 @@ public class Rubric implements Dictionary {
                 i=a.size()-1;
             }        
           }
-        if(b==0)throw new DictionaryItemNotFoundException("nome non trovato");
-        else  return "il numero della persona cercata e`:"+a.get(b).getValore()+'\n';
+        if(b==0)throw new DictionaryItemNotFoundException("Nome non trovato");
+        else  return "Il numero della persona cercata e`:"+a.get(b).getValore()+'\n';
     }
     public String toString(){
         String s="";
