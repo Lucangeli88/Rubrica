@@ -31,8 +31,10 @@ public class Test {
         System.out.println(b.isEmpty());
         b.remove("ascoli");
     }
+    
 }
  /**
+  * con scanner
 Scanner in=new Scanner(System.in);
       System.out.println("Inserisci il nome da aggiungere alla rubrica:");
       String c=in.next();
